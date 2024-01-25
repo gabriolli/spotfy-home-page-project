@@ -1,0 +1,223 @@
+:root{
+    font-family: var(--font-dm-sans);
+    font-size: 17px;
+}
+
+body{
+    
+    background-color: #000;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 16px;
+    width: 300px;
+}
+
+/*sidebar navegation style*/
+
+.sidebar_navegation, .library{
+    margin: 5px 0 10px 0;
+    background-color: #121212;
+    border-radius: 8px;
+    padding: 14px 0 14px 14px;
+}
+
+.sidebar_navegation .logo{
+    background: #121212;
+    display: flex;
+    border-radius: 8px;
+    padding: 16px 0 0 16px;
+}
+
+.logo img{
+    width: 80px;
+}
+
+.sidebar nav ul {
+    margin-top: 20px;
+    padding: 0 20px 10px 15px;
+}
+
+.sidebar nav ul li {
+    padding: 10px 0;
+}
+
+.sidebar nav ul li a{
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1em;
+}
+.sidebar nav ul li a span {
+    padding: 0 6px;
+}
+
+/*library style*/
+.library{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.library .library_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px 10px 8px;
+}
+
+.library .library_content .library_button button {
+    border: none;
+    background: none;
+    color: #b3b3b3;
+    padding: 10px 0;
+}
+
+.library .library_content .library_button button:hover{
+    cursor: pointer;
+}
+
+.library .library_content .library_button button span {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0 6px;
+}
+
+.library .library_content .library_button .fa{
+    font-size: 1.2rem;
+}
+.library .library_content span {
+    color: #b3b3b3;
+    font-size: 1rem;
+}
+
+.library .library_content span:hover{
+    cursor: pointer;
+}
+
+.section-playlist{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: 600;
+    background-color: #242424;
+    color: #fff;
+    border-radius: 8px;
+    margin: 8px;
+    padding: 16px 20px; 
+}
+
+.section-playlist .section-playlist__content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.section-playlist__content .title{
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.section-playlist__content .subtitle{
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.section-playlist__content .section-playlist__button{
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    color: #000;
+    border-radius: 20px;
+    font-weight: 700;
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.8em;
+    margin-top: 12px;
+    padding: 10px;
+    border: none;
+    width: 113px;
+}
+
+.section-playlist__content .section-playlist__button:hover{
+    cursor: pointer;
+}
+
+.sidebar .cookies {
+    padding: 25px 20px;
+}
+
+.sidebar .cookies a{
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #b3b3b3;
+}
+
+.sidebar .cookies a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.sidebar .languages__button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #878787;
+    color: #fff;
+    border-radius: 20px;
+    align-items: center;
+    padding: 8px;
+    width: 170px;
+    font-weight: bold;
+    margin: 8px;
+}
+/*footer style*/
+
+footer{
+    background: rgb(194,50,185);
+    background: -moz-linear-gradient(90deg, rgba(194,50,185,1) 4%, rgba(153,89,219,1) 41%, rgba(125,98,237,1) 63%, rgba(62,177,205,1) 98%);
+    background: -webkit-linear-gradient(90deg, rgba(194,50,185,1) 4%, rgba(153,89,219,1) 41%, rgba(125,98,237,1) 63%, rgba(62,177,205,1) 98%);
+    background: linear-gradient(90deg, rgba(194,50,185,1) 4%, rgba(153,89,219,1) 41%, rgba(125,98,237,1) 63%, rgba(62,177,205,1) 98%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c232b9",endColorstr="#3eb1cd",GradientType=1);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 50px;
+}
+
+footer .footer__content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer__content .footer-text{
+    color: #fff;
+    font-size: 14px;
+}
+
+.footer__content .title{
+    font-size: 12px;
+}
+
+.footer-box__button .footer__button{
+    border: none;
+    padding: 13px 20px;
+    border-radius: 23px;
+    font-size: 17px;
+    font-weight: bold;
+    width: 200px;
+    cursor: pointer;
+}
